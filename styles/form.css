@@ -1,0 +1,264 @@
+/*FORMA*/
+.forma-wrapper{
+    width:100%;
+    padding:160px;
+    background-image: url('../img/form-background.png');
+    background-size:cover;
+    position: relative;
+}
+.tea-flex{
+    position: absolute;
+    z-index:2;
+    top:7%;
+    left:7%;
+}
+.forma-flex{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    position: relative;
+    /*right: 45px;*/
+    z-index: 1;
+}
+.forma-flex img{
+    position:absolute;
+    top:-90px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+}
+.forma-okvir{
+    display:flex;
+    padding: 5% 5%;  
+    width: 100%;
+    padding-left: 25%;
+}
+
+.forma-left{
+    width: 50%;
+}
+.forma-left p{
+    font-size: large;
+    font-weight: 500;
+    padding-bottom:10px;
+    font-size: 25px;
+}
+input::placeholder{
+    color:black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    margin-top:40px;
+    padding: 2%;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 5px;
+    border-color: #d4c8b9;
+    background-color: #fff;
+    color: #372f30;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content p{
+    color: #372f30;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.cijenaSaSnizenjem{  
+    display:flex;
+    margin-top:40px;
+}
+.cijenaSaSnizenjem p{
+    text-decoration: none;
+    background-image: linear-gradient(transparent 53%, black 60% 44%, transparent 56%);
+    line-height: 1;
+    font-size: 60px;
+}
+.cijenaSaSnizenjem h5{
+    line-height: 1.2;
+    font-size: 30px;
+    margin:0;
+}
+.snizenjeOkvir{
+    margin-top: 30px;
+    width: 100%;
+}
+.cijenaLIJEVI{
+    border-left:solid 2px  rgba(0, 0, 0, 0.22);
+    padding-left:20px;
+    padding-right: 20px;
+    width:50%;
+}
+.cijenaDESNI{
+    border-left:solid 2px  rgba(0, 0, 0, 0.22);
+    padding-left:20px;
+    padding-right: 10px;
+    color:#d24d4d;
+    width:50%;
+}
+.cijenaDESNI p{
+    background-image:none;
+}
+#drzava{
+    width: 100%;
+    padding: 5px;
+    font-weight: 400;
+    font-size: x-large;
+    border-radius: 5px;
+    border-color: #d4c8b9;
+    margin-top:25px;
+}
+.forma-right{
+    margin-left:50px;
+    width:50%;
+}
+.forma-right input{
+    border:none;
+    border-bottom:2px solid  rgba(0, 0, 0, 0.22);
+    padding-bottom:10px;
+    margin-bottom:30px;
+    font-size: 20px;
+    width: 100%;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.forma-left .komadOkvir p{
+    width: 100%;
+    color:black;
+    background-color: #ffffff;
+    padding:10px;
+    font-size: 42px;
+    font-weight: 500;
+    overflow: hidden;
+    border:inset rgba(0, 0, 0, 0.10) 0.2px;
+} 
+.forma-right p{
+    color:red;
+    font-weight: 600;
+    padding-top:4%;
+    padding-bottom:4%;
+    margin-bottom:0;
+}
+input:last-child{
+    font-size: medium;
+    color:black;
+    border:none;
+    text-align: center;
+    padding:15px 80px;
+    border-radius: 5px;
+    background-color: #f4be55;
+    font-weight: bold;
+    margin-bottom:0;
+}
+@media only screen and (max-width: 1820px)
+{
+    .tea-flex{
+        position:static;
+        display: flex;
+        justify-content: center;
+    }
+    .forma-okvir{
+        padding-left:5%;
+    }
+    .cijenaSaSnizenjem{
+        text-align: center;
+    }
+   
+}
+@media only screen and (max-width: 1500px)
+{
+    .forma-wrapper{
+        padding:50px 160px;
+    }
+    .forma-okvir{
+        flex-direction: column;
+    }
+    .forma-left{
+        margin-bottom:20px;
+        width:100%;
+    }
+    .forma-right{
+        margin-left:0;
+        width:100%;
+    }
+    .forma-flex{
+        right: 0;
+    }
+    #poKomadu{
+        padding:1%;
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .forma-wrapper{
+        padding: 50px 50px;
+    }
+    .forma-okvir{
+        width: 100%;
+    }
+    .forma-flex img{
+        right: 0px;
+    }
+}
+@media only screen and (max-width: 750px)
+{
+    .forma-wrapper{
+        padding: 50px 0;
+    }
+    .forma-okvir{
+        padding:80px 10px;
+    }
+}
+@media only screen and (max-width: 550px)
+{
+    .forma-left{
+        margin:unset;
+        margin-bottom: 20px;
+    }
+    .forma-flex img{
+        right: 0px;
+    }
+    .snizenjeOkvir{
+        width: auto;
+    }
+    .cijenaSaSnizenjem h5{
+        font-size: 20px;
+    }
+    .cijenaSaSnizenjem p{
+        font-size: 40px;
+        background-image: linear-gradient(transparent 43%, black 50% 4%, transparent 5%);
+    }
+    .cijenaDESNI p{
+        background-image:none;
+    }
+    .tea-flex{
+        width:80%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .tea-flex img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 400px)
+{
+    .cijenaSaSnizenjem h5{
+        font-size: 17px;
+    }
+    .cijenaSaSnizenjem p{
+        font-size: 31px;
+    }
+}

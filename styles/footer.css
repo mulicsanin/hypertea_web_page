@@ -1,0 +1,13 @@
+/*FOOTER - section*/
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #532729;
+    padding: 5%;
+    color: #fbf1e4;
+}
+.footer p{
+    width: 100%;
+    hyphens: manual;
+    margin:0
+}

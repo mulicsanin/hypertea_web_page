@@ -1,0 +1,73 @@
+/*BORDO-section*/
+.bordo-wrapper{
+    width:100%;
+    padding: 450px 160px 250px 160px;
+    background-color: #843c3f;
+}
+.bordo{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.bordo-box{
+    display:flex;
+    flex-direction: column;
+    font-size: 35px;
+    line-height: 1.1;
+    word-spacing: 1px;
+    color: #d9c3b1;
+
+}
+.bordo-box-img  {
+    margin-bottom:20px;
+}
+.bordo1{
+    padding-right: 130px;
+    border-right: 5px solid #773639;
+}
+.bordo2{
+    padding-left:150px;
+    padding-right: 120px;
+}
+.bordo3{
+    padding-left:160px;
+    border-left: 5px solid #773639;
+}
+
+@media only screen and (max-width: 1450px)
+{
+    .bordo-wrapper
+    {
+        padding: 150px 160px 150px 160px;
+    }
+    .bordo{
+        flex-wrap: wrap;
+    }
+    .bordo-box{
+        flex-direction: row;
+        align-items: center;
+    }
+    .bordo1, .bordo2, .bordo3{
+        padding-left:0;
+        padding-right: 0;
+        border:none;
+        border-bottom:5px solid #773639;
+        margin-bottom:20px;
+    }
+    .bordo-box-text{
+        padding-bottom:10px;
+    }
+}
+@media only screen and (max-width: 700px)
+{
+    .bordo-wrapper{
+        padding: 10px; 
+        justify-content: center;
+      }
+    .bordo-box{
+        flex-direction: column;
+    }
+    .bordo-box-text{
+        text-align: center;
+    }
+}

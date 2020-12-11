@@ -1,0 +1,183 @@
+/*SYMPTOMS - section*/
+.symptoms-wrapper{
+    width:100%;
+    padding: 200px 160px 100px 160px;
+    background-image: url('../img/symptoms_background.png');
+    background-position: left;
+    background-size: cover;
+    display:flex;
+    position:relative;
+}
+
+.symptoms-left{
+    display:flex;
+    flex-direction: column; 
+    
+}
+.symptoms-title{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.symptoms-table{
+    display: flex;
+    list-style: url('../img/check-mark.png');
+    margin-top: 3%;
+}
+.symptoms-table li{
+    margin:20px 10px 10px 70px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.symptoms-table-left{
+    margin-right: 20px;
+}
+.main-green-box{
+    width: 700px;
+    padding: 5px;
+    padding-top:20px;
+    margin-top:100px;
+    background-color: #adc355;
+    position: relative;
+    border-radius: 35px;
+    box-shadow: 27px 76px 92px 0px rgba(103, 71, 33, 0.2);
+}
+.main-box-title{
+    font-size: 20px;
+    padding: 0 35px;
+    padding-bottom:20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 10px black;
+    position: relative;
+    z-index: 2;
+}
+.green-box-obj{
+    background-color: rgb(173, 195, 85);
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    top:-25px;
+    left:70px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    /* Safari */
+ -webkit-transform: rotate(-45deg);
+
+ /* Firefox */
+ -moz-transform: rotate(-45deg);
+
+ /* IE */
+ -ms-transform: rotate(-45deg);
+}
+.support-green-box{
+    background-color: #c6d489;
+    text-align: left;
+    padding: 40px 60px;
+    border-radius: 0px 0px 35px 35px;
+    display:flex;
+    flex-direction: column;
+    color:#2c2c2c
+}
+.support-box-title{
+    padding-bottom:20px;
+}
+.support-box-text{
+    font-size: 33px;
+    line-height: 1.2;
+}
+
+.symptoms-right{
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.symptoms-right img{
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 1750px)
+{
+    .symptoms-right img{
+       width: 30vw;
+    }
+}
+@media only screen and (max-width: 1520px)
+{
+    .symptoms-right img{
+        height: 60vh;
+     }
+}
+@media only screen and (max-width: 1185px)
+{
+    .symptoms-table{
+        flex-direction: column;
+    }
+    .symptoms-wrapper{
+        flex-direction: column;
+    }
+    .symptoms-right{
+        display:none;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+    .symptoms-wrapper{
+        padding: 100px 100px;
+        justify-content: center;
+    }
+    .symptoms-left{
+        align-items: center;
+    }
+    .symptoms-table-left{
+        margin:0;
+    }
+    .symptoms-title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 830px)
+{
+    .symptoms-wrapper{
+        padding: 100px 0px;
+        
+    }
+    .symptoms-title{
+        font-size: 15px;
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    .symptoms-table li{
+        font-size: 25px;
+    }
+    .main-green-box{
+        width: 450px;
+    }
+    .main-box-title{
+        font-size: 13px;;
+    }
+    .support-box-text{
+        font-size: 20px;;
+    }
+}
+@media only screen and (max-width: 450px)
+{
+    .symptoms-table{
+        list-style: square;
+    }
+    .symptoms-table li{
+        font-size: 20px;
+    }
+    .symptoms-title{
+        font-size: 10px;
+    }
+    .main-green-box{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 400px)
+{
+    .symptoms-title{
+        font-size: 8px;
+    }
+}
