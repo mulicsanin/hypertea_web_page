@@ -19,7 +19,7 @@
     <link type="text/css" href="styles/benefits.css"  rel="stylesheet">
     <link type="text/css" href="styles/usage.css"  rel="stylesheet">
     <link type="text/css" href="styles/footer.css"  rel="stylesheet">
-
+    <script src="styles/main.js" defer></script>
     <title>Hypertea_FLEX</title>
 </head>
 <body>
@@ -135,8 +135,8 @@
                             </div>
                         </div>
                         <select id="drzava" name="drzava">
-                            <option value="BiH">Bosnia and Herzegovina</option>
-                            <option value="SRB" selected>Serbia</option>
+                            <option value="BiH" selected>Bosnia and Herzegovina</option>
+                            <option value="SRB">Serbia</option>
                             <option value="CRO">Croatia</option>
                             <option value="MNE">Montenegro</option>
                         </select>
@@ -144,31 +144,22 @@
                     <div class="forma-right">
                         <input type="text" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoje ime:"/>
                         <input type="tel" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoj broj telefona:"/>
-                    <!--<select class="formaRed" id="poKomadu" name="poKomadu">
-                            <option value="1">1=55 KM</option>
-                            <option value="2">2=110 KM</option>
-                            <option value="3">3=165 KM</option>
-                            <option value="4">4=220 KM</option>
-                            <option value="5">5=275 KM</option>
-                            <option value="6">6=330 KM</option>
-                            <option value="7">7=385 KM</option>
-                            <option value="8">8=440 KM</option>
-                            <option value="9">9=495 KM</option>
-                        </select>-->
+                    
                         <div class="dropdown">
-                            <span>1=55 KM</span>
+                            <span data-dropTo>1=55 KM</span>
                             <div class="dropdown-content">
-                            <p>2=110 KM</p>
-                            <p>3=165 KM</p>
-                            <p>4=220 KM</p>
-                            <p>5=275 KM</p>
-                            <p>6=330 KM</p>
-                            <p>7=385 KM</p>
-                            <p>8=440 KM</p>
-                            <p>9=495 KM</p>
+                            <p data-price-tag>1=55 KM</p>
+                            <p data-price-tag>2=110 KM</p>
+                            <p data-price-tag>3=165 KM</p>
+                            <p data-price-tag>4=220 KM</p>
+                            <p data-price-tag>5=275 KM</p>
+                            <p data-price-tag>6=330 KM</p>
+                            <p data-price-tag>7=385 KM</p>
+                            <p data-price-tag>8=440 KM</p>
+                            <p data-price-tag>9=495 KM</p>
                             </div>
                         </div>
-                        <p>1 PAKOVANJE = 55 KM</p>
+                        <p class="redPrice">1 PAKOVANJE = 55 KM</p>
                         <input class="formaRed" type="submit" id="naruci" value="NARUČI"/>
                     </div>
                 </div>
@@ -434,8 +425,8 @@
                             </div>
                         </div>
                         <select id="drzava" name="drzava">
-                            <option value="BiH">Bosnia and Herzegovina</option>
-                            <option value="SRB" selected>Serbia</option>
+                            <option value="BiH" selected>Bosnia and Herzegovina</option>
+                            <option value="SRB">Serbia</option>
                             <option value="CRO">Croatia</option>
                             <option value="MNE">Montenegro</option>
                         </select>
@@ -443,31 +434,22 @@
                     <div class="forma-right">
                         <input type="text" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoje ime:"/>
                         <input type="tel" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoj broj telefona:"/>
-                        <!--<select class="formaRed" id="poKomadu" name="poKomadu">
-                            <option value="1">1=55 KM</option>
-                            <option value="2">2=110 KM</option>
-                            <option value="3">3=165 KM</option>
-                            <option value="4">4=220 KM</option>
-                            <option value="5">5=275 KM</option>
-                            <option value="6">6=330 KM</option>
-                            <option value="7">7=385 KM</option>
-                            <option value="8">8=440 KM</option>
-                            <option value="9">9=495 KM</option>
-                        </select>-->
+                        
                         <div class="dropdown">
-                            <span>1=55 KM</span>
+                            <span data-dropTo>1=55 KM</span>
                             <div class="dropdown-content">
-                            <p>2=110 KM</p>
-                            <p>3=165 KM</p>
-                            <p>4=220 KM</p>
-                            <p>5=275 KM</p>
-                            <p>6=330 KM</p>
-                            <p>7=385 KM</p>
-                            <p>8=440 KM</p>
-                            <p>9=495 KM</p>
+                            <p data-price-tag>1=55 KM</p>
+                            <p data-price-tag>2=110 KM</p>
+                            <p data-price-tag>3=165 KM</p>
+                            <p data-price-tag>4=220 KM</p>
+                            <p data-price-tag>5=275 KM</p>
+                            <p data-price-tag>6=330 KM</p>
+                            <p data-price-tag>7=385 KM</p>
+                            <p data-price-tag>8=440 KM</p>
+                            <p data-price-tag>9=495 KM</p>
                             </div>
                         </div>
-                        <p>1 PAKOVANJE = 55 KM</p>
+                        <p class="redPrice">1 PAKOVANJE = 55 KM</p>
                         <input class="formaRed" type="submit" id="naruci" value="NARUČI"/>
                     </div>
                 </div>
@@ -726,8 +708,8 @@
                             </div>
                         </div>
                         <select id="drzava" name="drzava">
-                            <option value="BiH">Bosnia and Herzegovina</option>
-                            <option value="SRB" selected>Serbia</option>
+                            <option value="BiH" selected>Bosnia and Herzegovina</option>
+                            <option value="SRB">Serbia</option>
                             <option value="CRO">Croatia</option>
                             <option value="MNE">Montenegro</option>
                         </select>
@@ -735,31 +717,22 @@
                     <div class="forma-right">
                         <input type="text" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoje ime:"/>
                         <input type="tel" class="formaRed"for="Ime" name="ime" id="ime" placeholder="Unesite svoj broj telefona:"/>
-                        <!--<select class="formaRed" id="poKomadu" name="poKomadu">
-                            <option value="1">1=55 KM</option>
-                            <option value="2">2=110 KM</option>
-                            <option value="3">3=165 KM</option>
-                            <option value="4">4=220 KM</option>
-                            <option value="5">5=275 KM</option>
-                            <option value="6">6=330 KM</option>
-                            <option value="7">7=385 KM</option>
-                            <option value="8">8=440 KM</option>
-                            <option value="9">9=495 KM</option>
-                        </select>-->
+                        
                         <div class="dropdown">
-                            <span>1=55 KM</span>
+                            <span data-dropTo>1=55 KM</span>
                             <div class="dropdown-content">
-                            <p>2=110 KM</p>
-                            <p>3=165 KM</p>
-                            <p>4=220 KM</p>
-                            <p>5=275 KM</p>
-                            <p>6=330 KM</p>
-                            <p>7=385 KM</p>
-                            <p>8=440 KM</p>
-                            <p>9=495 KM</p>
+                            <p data-price-tag>1=55 KM</p>
+                            <p data-price-tag>2=110 KM</p>
+                            <p data-price-tag>3=165 KM</p>
+                            <p data-price-tag>4=220 KM</p>
+                            <p data-price-tag>5=275 KM</p>
+                            <p data-price-tag>6=330 KM</p>
+                            <p data-price-tag>7=385 KM</p>
+                            <p data-price-tag>8=440 KM</p>
+                            <p data-price-tag>9=495 KM</p>
                             </div>
                         </div>
-                        <p>1 PAKOVANJE = 55 KM</p>
+                        <p class="redPrice">1 PAKOVANJE = 55 KM</p>
                         <input class="formaRed" type="submit" id="naruci" value="NARUČI"/>
                     </div>
                 </div>
